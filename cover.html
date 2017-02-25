@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+    <title>ByteCode</title>
+    <link href="../NTCC/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../NTCC/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet">
+    <link href="../NTCC/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="cover.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner" >
+
+			<div class="cover-container" >
+
+				<div class="masthead clearfix">
+					<div class="inner">
+						<a href="../NTCC/cover.html"><h3 class="masthead-brand" style="color: black; font-size: 30px; padding:15px 15px ">ByteCode</h3></a>
+						
+						<nav >
+						
+							<ul class="nav masthead-nav" >
+								<li><a href="../NTCC/contact.html">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="inner cover">
+					<h1 class="cover-heading" style="color: black; font-size: 25px; padding: 15px 15px; shadow: 5px 5px 5px 5px;">Be Curious...</h1>
+					<p class="lead">ByteCode is a platform to Ask the doubts or <i>" how-to "</i> related to different <i>Programming Languages</i> . Also, if you think you got enough knowledge, you can <i> Answer</i> to the questions posted by other members of the community. <br/> <h2><b> Cheers ! ! ! </b></h2></p>
+					<p class="lead">
+						<a href="#openModal1" class="btn btn-lg btn-default" style="color: black;">Login</a>
+						<a href="#openModal" class="btn btn-lg btn-default" style="color: black;">Register</a>
+						<div id="openModal1" class="modalDialog">
+							<div id="mod">
+								<a href="#close" title="Close" class="close">X</a>
+								<div class="container">
+									<form class="form-signin" method=post action=homepage.html>
+										<h2 class="form-signin-heading">Please sign in :</h2>
+										<br/>
+										<label for="inputEmail" style=" font-size:20px; padding: 15px;" class="sr-only"></label>
+										<input type=email name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+										<label for="inputPassword" style=" font-size:20px; padding: 14px;" class="sr-only"></label>
+										<input type=password name=pass1 id="inputPassword" class="form-control" placeholder="Password" required>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="remember-me"> Remember me
+											</label>
+										</div>
+										 <input class="btn btn-lg btn-default" style="color: black;" href="../NTCC/homepage.html" type=submit name=submit value="Sign-in" /> 
+										<!-- <p class="lead">
+											<input type=submit name=submit class="btn btn-lg btn-default" style="color: black;" href="../NTCC/homepage.html" >
+										</p> -->
+									</form>
+									
+								</div>
+							</div>
+						</div>
+						
+						<div id="openModal" class="modalDialog">
+							<div id="mod">
+								<a href="#close" title="Close" class="close">X</a>
+								<div class="container">
+									<form class="form-signin" method=post action=homepage.html>
+										<h2 class="form-signin-heading">Register</h2>
+										<br/>
+										<input type=text name=fname type="text" id="fname" class="form-control" placeholder="First Name" required />
+										<input type=text name=lname type="text" id="lname" class="form-control" placeholder="Last Name" required />
+										<input type=text name=email type="text" id="email" class="form-control" placeholder="Email-ID" required />
+										<input type=password type="password" id="txtPassword" class="form-control" placeholder="Password" required />
+										<input   type="password" id="txtConfirmpassword" class="form-control" placeholder="Retype Password" required /> <br/>
+										<select name=gender class="gender" class="form-control" placeholder="Gender" required >
+											<option id="male">Male</option> 
+											<option id="female">Female</option>
+											<option id="unspecified">Unspecified</option>
+										</select>
+										<script type="text/javascript">
+											function{
+											var password = document.getElementById("txtPassword").value;
+											var confirmPassword = document.getElementById("txtConfirmPassword").value;
+											if (password != confirmPassword) {
+											alert("Passwords do not match.");
+											return false;
+											}
+											return true;
+											}
+										</script>
+										<p class="lead">
+											<input class="btn btn-lg btn-default" style="color: black;" href="../NTCC/homepage.html" type=submit name=submit value="Register" /> 
+										</p>
+									</form>
+									
+								</div>
+							</div>
+						</div>	
+					</p>
+				</div>
+
+				<div class="mastfoot">
+					<div class="inner">
+						<p style="color: black;font-size: 20px; padding: 15px 15px;">&copy; ByteCode</p>
+					</div>
+				</div>
+			</div>
+       </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
